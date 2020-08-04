@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public Animator animator;
+    ///public Animator animator;
+
+    private bool notUsedYet = true;
 
     public Transform attackPoint;
 
@@ -14,18 +16,26 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AttackAction();
+        if (Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers) != null)
+        {
+            if (notUsedYet)
+            {
+                InvokeRepeating("AttackAction", 0, 2f);
+            }
+        }
+        
     }
 
     void AttackAction()
     {
         //animator.SetTrigger("Attack");
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        foreach (var enemy in hitEnemies)
+        Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
+        if(hitEnemy != null)
         {
-            Debug.Log("I Hit");
+            Debug.Log("Hit");
         }
+
+        notUsedYet = false;
     }
 
     private void OnDrawGizmosSelected()
@@ -34,7 +44,6 @@ public class Attack : MonoBehaviour
         {
             return;
         }
-
 
         Gizmos.DrawSphere(attackPoint.position, attackRange);
     }

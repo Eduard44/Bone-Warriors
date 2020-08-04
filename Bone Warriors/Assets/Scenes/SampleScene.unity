@@ -211,6 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 41489133}
+  - component: {fileID: 41489134}
   m_Layer: 0
   m_Name: attackPoint
   m_TagString: Untagged
@@ -232,6 +233,32 @@ Transform:
   m_Father: {fileID: 625550540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &41489134
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41489132}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.81, y: 0.13}
+  m_EdgeRadius: 0
 --- !u!1 &90127421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1524,7 @@ GameObject:
   - component: {fileID: 625550543}
   - component: {fileID: 625550542}
   - component: {fileID: 625550541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1512,7 +1539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625550539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.708, y: -0.516, z: 0}
+  m_LocalPosition: {x: 7.069, y: -0.516, z: 0}
   m_LocalScale: {x: 0.25, y: 0.55, z: 1}
   m_Children:
   - {fileID: 41489133}
@@ -1531,7 +1558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a28d0c0fb35c3429216876eedfd9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   attackPoint: {fileID: 41489133}
   attackRange: 0.08
   enemyLayers:
