@@ -12,11 +12,16 @@ public class Attack : MonoBehaviour
 
     public float attackRange = 0.5f;
 
+    private Collider2D enemy;
+
     public LayerMask enemyLayers;
     // Update is called once per frame
     void Update()
     {
-        if (Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers) != null)
+
+        enemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
+
+        if (enemy != null)
         {
             if (notUsedYet)
             {
@@ -29,8 +34,8 @@ public class Attack : MonoBehaviour
     void AttackAction()
     {
         //animator.SetTrigger("Attack");
-        Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
-        if(hitEnemy != null)
+        //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
+        if(enemy != null)
         {
             Debug.Log("Hit");
         }
