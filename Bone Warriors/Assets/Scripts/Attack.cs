@@ -6,22 +6,24 @@ public class Attack : MonoBehaviour
 {
     ///public Animator animator;
 
+    public float attackDamage = 1;
+
     private bool notUsedYet = true;
 
     public Transform attackPoint;
 
     public float attackRange = 0.5f;
 
-    private Collider2D enemy;
+    private Collider2D[] enemies;
 
     public LayerMask enemyLayers;
     // Update is called once per frame
     void Update()
     {
 
-        enemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
+        enemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        if (enemy != null)
+        if (enemies != null)
         {
             if (notUsedYet)
             {
@@ -33,14 +35,20 @@ public class Attack : MonoBehaviour
 
     void AttackAction()
     {
+        notUsedYet = false;
+
         //animator.SetTrigger("Attack");
         //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
-        if(enemy != null)
+        foreach (var enemy in enemies)
         {
-            Debug.Log("Hit");
+            if (enemy != null)
+            {
+                enemy.GetComponent<Health>().HealthPoints -= attackDamage;
+                Debug.Log($"ATTACKER:{gameObject.name}  + TARGET HIT:{enemy.name}");
+            }
         }
+        
 
-        notUsedYet = false;
     }
 
     private void OnDrawGizmosSelected()
