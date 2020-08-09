@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3476738013
+    locked: 0
+  - name: Base
+    uniqueID: 2689298573
+    locked: 0
+  - name: Boss
+    uniqueID: 3358340129
+    locked: 0
+  - name: Minions
+    uniqueID: 3720145839
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
