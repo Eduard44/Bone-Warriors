@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float HealthPoints;
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(this.HealthPoints <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void TakeDamage(int damage)
+    {
+        this.HealthPoints -= damage;
     }
 }
