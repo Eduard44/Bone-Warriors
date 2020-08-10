@@ -10,7 +10,8 @@ public class Attack : MonoBehaviour
 
     private bool notUsedYet = true;
 
-    public Transform attackPoint;
+    public Transform attackPointClose;
+
 
     public float attackRange = 0.5f;
 
@@ -21,7 +22,7 @@ public class Attack : MonoBehaviour
     void Update()
     {
 
-        enemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        enemies = Physics2D.OverlapCircleAll(attackPointClose.position, attackRange, enemyLayers);
 
         if (enemies != null)
         {
@@ -53,11 +54,15 @@ public class Attack : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if(attackPoint == null)
+        if(attackPointClose == null)
         {
             return;
         }
 
-        Gizmos.DrawSphere(attackPoint.position, attackRange);
+        
+
+        Gizmos.DrawSphere(attackPointClose.position, attackRange);
+
+        
     }
 }
