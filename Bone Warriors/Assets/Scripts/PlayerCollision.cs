@@ -16,9 +16,11 @@ public class PlayerCollision : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Movement Stopped");
-        var script = gameObject.GetComponentInParent<PlayerMovement>();
-        script.movementSpeed = 0;
+        if(other.name == "Spartan Boss"){
+            Debug.Log("Movement Stopped");
+            var script = gameObject.GetComponentInParent<PlayerMovement>();
+            script.movementSpeed = 0;
+        }
     }
 
 }
