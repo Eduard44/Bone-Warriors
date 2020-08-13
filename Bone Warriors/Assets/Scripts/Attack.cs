@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    ///public Animator animator;
+    public Animator animator;
 
     public float attackDamage = 1;
 
@@ -18,6 +18,12 @@ public class Attack : MonoBehaviour
     private Collider2D[] enemies;
 
     public LayerMask enemyLayers;
+
+    private void Start()
+    {
+        animator.GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -38,7 +44,7 @@ public class Attack : MonoBehaviour
     {
         notUsedYet = false;
 
-        //animator.SetTrigger("Attack");
+        animator.SetBool("Attack", true);
         //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
         foreach (var enemy in enemies)
         {
