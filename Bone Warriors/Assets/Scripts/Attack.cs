@@ -19,10 +19,6 @@ public class Attack : MonoBehaviour
 
     public LayerMask enemyLayers;
 
-    private void Start()
-    {
-        animator.GetComponent<Animator>();
-    }
 
     // Update is called once per frame
     void Update()
@@ -43,13 +39,13 @@ public class Attack : MonoBehaviour
     void AttackAction()
     {
         notUsedYet = false;
-
-        animator.SetBool("Attack", true);
         //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
         foreach (var enemy in enemies)
         {
+
             if (enemy != null)
             {
+                animator.SetBool("Attack", true);
                 enemy.GetComponent<Health>().HealthPoints -= attackDamage;
                 Debug.Log($"ATTACKER:{gameObject.name}  + TARGET HIT:{enemy.name}");
             }
