@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossAttack : MonoBehaviour
 {
-    ///public Animator animator;
+    public Animator animator;
 
     public float attackDamage = 1;
 
@@ -63,10 +63,10 @@ public class BossAttack : MonoBehaviour
     {
         notUsedYet = false;
 
-        //animator.SetTrigger("Attack");
         //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
         foreach (var enemy in enemies)
         {
+            
             if (enemy != null)
             {
                 enemy.GetComponent<Health>().HealthPoints -= attackDamage;
@@ -79,10 +79,10 @@ public class BossAttack : MonoBehaviour
     {
         notUsedYetFar = false;
 
-        //animator.SetTrigger("Attack");
         //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
         foreach (var enemy in enemiesFar)
         {
+            animator.SetBool("IsAttacking", true);
             if (enemy != null)
             {
                 enemy.GetComponent<Health>().HealthPoints -= attackDamage;
