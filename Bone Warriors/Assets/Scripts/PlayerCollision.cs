@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-
     private void Start()
     {
             
@@ -20,6 +19,8 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log("Movement Stopped");
             var script = gameObject.GetComponentInParent<PlayerMovement>();
             script.movementSpeed = 0;
+            Animator animator= gameObject.GetComponentInParent<Animator>();
+            animator.SetBool("Attack", true);
         }
     }
 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &957768210
+--- !u!1 &994619720
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 957768211}
-  - component: {fileID: 957768213}
-  - component: {fileID: 957768212}
+  - component: {fileID: 994619721}
+  - component: {fileID: 994619723}
+  - component: {fileID: 994619722}
   m_Layer: 0
   m_Name: attackPoint
   m_TagString: Untagged
@@ -18,27 +18,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &957768211
+--- !u!4 &994619721
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957768210}
+  m_GameObject: {fileID: 994619720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.02, y: -0.05, z: 0}
   m_LocalScale: {x: 0.25, y: 0.55, z: 1}
   m_Children: []
   m_Father: {fileID: 5391892401283871731}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &957768213
+--- !u!61 &994619723
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957768210}
+  m_GameObject: {fileID: 994619720}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -58,13 +58,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.13}
   m_EdgeRadius: 0
---- !u!114 &957768212
+--- !u!114 &994619722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957768210}
+  m_GameObject: {fileID: 994619720}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 128c6fc22722eb34abd3d0dcd0d02b25, type: 3}
@@ -247,7 +247,6 @@ GameObject:
   - component: {fileID: -2693637581911181552}
   - component: {fileID: -5420307964289299062}
   - component: {fileID: 6162915166009125648}
-  - component: {fileID: 7966112162598716370}
   - component: {fileID: 5391892401283871730}
   m_Layer: 0
   m_Name: Skeleton Archer
@@ -270,7 +269,7 @@ Transform:
   - {fileID: 5391892401044646295}
   - {fileID: 5391892401705197126}
   - {fileID: 5391892401123231986}
-  - {fileID: 957768211}
+  - {fileID: 994619721}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -350,9 +349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a28d0c0fb35c3429216876eedfd9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 5391892401283871730}
   attackDamage: 1
-  attackPointClose: {fileID: 957768211}
+  attackPointClose: {fileID: 0}
   attackRange: 0.05
   enemyLayers:
     serializedVersion: 2
@@ -370,18 +368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.5
---- !u!114 &7966112162598716370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5391892401283871692}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 326abed7997ae9c4da44a0251b0b1c96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &5391892401283871730
 Animator:
   serializedVersion: 3

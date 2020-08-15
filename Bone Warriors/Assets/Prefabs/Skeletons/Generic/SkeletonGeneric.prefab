@@ -209,7 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a28d0c0fb35c3429216876eedfd9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 7258728669552247843}
   attackDamage: 1
   attackPointClose: {fileID: 227367487}
   attackRange: 0.08
