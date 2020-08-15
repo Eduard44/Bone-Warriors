@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public Animator animator;
 
     public float attackDamage = 1;
 
@@ -42,10 +41,8 @@ public class Attack : MonoBehaviour
         //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
         foreach (var enemy in enemies)
         {
-
             if (enemy != null)
             {
-                animator.SetBool("Attack", true);
                 enemy.GetComponent<Health>().HealthPoints -= attackDamage;
                 Debug.Log($"ATTACKER:{gameObject.name}  + TARGET HIT:{enemy.name}");
             }

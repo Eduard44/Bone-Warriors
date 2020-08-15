@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class CollisionRange : MonoBehaviour
 {
-    private void Start()
-    {
-
-    }
 
     private void Update()
     {
@@ -17,9 +13,12 @@ public class CollisionRange : MonoBehaviour
     {
         if (other.name == "AttackPointFar")
         {
+            
             Debug.Log("Movement Stopped");
             var script = gameObject.GetComponentInParent<PlayerMovement>();
             script.movementSpeed = 0;
+            Animator animator = gameObject.GetComponentInParent<Animator>();
+            animator.SetBool("Attack", true);
         }
     }
 }
