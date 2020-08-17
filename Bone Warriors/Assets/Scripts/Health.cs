@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float HealthPoints;
+    public float healthPoints;
+
+    public float maxHealth;
+
     void Start()
     {
-
+        healthPoints = maxHealth;
     }
 
     void Update()
     {
-        if(this.HealthPoints <= 0)
+        if(this.healthPoints <= 0)
         {
             Destroy(gameObject);
         }
@@ -20,6 +23,6 @@ public class Health : MonoBehaviour
 
     void TakeDamage(int damage)
     {
-        this.HealthPoints -= damage;
+        this.healthPoints -= damage;
     }
 }

@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
 
     //this sets our max health
-    public void SetMaxHealth(int health)
+    public void SetMaxHealth(float health)
     {
         //making the slider have the max health and
         //of course the min health stays 0 so we don't need a function for it
@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
         slider.value = health;
     }
     //this function moves our slider which visually moves the values
-    public void SetHealth(int health)
+    public void SetHealth(float health)
     {
         slider.value = health;
     }
