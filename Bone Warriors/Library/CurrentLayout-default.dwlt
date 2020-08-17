@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1600
     height: 1067
-  m_MinSize: {x: 678, y: 713}
-  m_MaxSize: {x: 14001, y: 18063}
+  m_MinSize: {x: 679, y: 713}
+  m_MaxSize: {x: 14002, y: 18063}
   vertical: 0
-  controlID: 94
+  controlID: 113
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 713}
   m_MaxSize: {x: 10001, y: 18063}
   vertical: 1
-  controlID: 99
+  controlID: 118
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 442}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 0
-  controlID: 100
+  controlID: 119
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 127
+  controlID: 146
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,8 +319,8 @@ MonoBehaviour:
     y: 0
     width: 311
     height: 1067
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -446,10 +446,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 24f2ffff6ef7ffff9ef9ffff12fbffff1cfbffff22390000a4390000
+      scrollPos: {x: 0, y: 80}
+      m_SelectedIDs: b0390000
+      m_LastClickedID: 14768
+      m_ExpandedIDs: 36fbffff38fbffff203900003c3900007a390000b6390000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -509,9 +509,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.4358804, y: 1.1960114, z: -260.04523}
+    m_Target: {x: 1.2242805, y: 0.36843544, z: -262.82086}
     speed: 2
-    m_Value: {x: 1.6068468, y: 1.2634116, z: -260.0342}
+    m_Value: {x: 1.2242805, y: 0.36843544, z: -262.82086}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -561,9 +561,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.9255555
+    m_Target: 2.0875127
     speed: 2
-    m_Value: 3.0634089
+    m_Value: 2.0875127
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -653,21 +653,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Skeletons/Archer
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Skeletons/Archer
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\\u0422\u043E\u043D\u0438\\Documents\\GitHub\\Bone-Warriors\\Bone
     Warriors"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe3d0000
-    m_LastClickedID: 15870
-    m_ExpandedIDs: 00000000d03a0000d23a0000823b0000fc3d000000ca9a3b
+    scrollPos: {x: 0, y: 41}
+    m_SelectedIDs: fa3a0000
+    m_LastClickedID: 15098
+    m_ExpandedIDs: 00000000dc3a0000de3a0000e23a0000ee3a0000363b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -695,7 +695,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d03a0000d23a0000
+    m_ExpandedIDs: 00000000dc3a0000de3a0000e03a0000e23a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -836,7 +836,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -2538
+  m_LastSelectedObjectID: 14768
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52

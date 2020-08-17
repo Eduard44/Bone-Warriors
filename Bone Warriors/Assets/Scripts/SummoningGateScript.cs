@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SummoningGateScript : MonoBehaviour
 {
-    public Transform spawnPoint;
     public Transform meleeUnitPrefab;
+    public Vector3 position;
 
     public void SummonMeleeUnit()
     {
-        Instantiate(meleeUnitPrefab, spawnPoint);
+        Instantiate(meleeUnitPrefab, gameObject.transform.position, gameObject.transform.rotation);
     }
 }
