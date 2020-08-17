@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\CollisionRange.cs" />
     <Compile Include="Assets\Scripts\GoldUiScript.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Shooting.cs" />
