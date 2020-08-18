@@ -70,7 +70,7 @@ public class BossAttack : MonoBehaviour
             
             if (enemy != null)
             {
-                enemy.GetComponent<Health>().HealthPoints -= attackDamage;
+                enemy.GetComponent<Health>().healthPoints -= attackDamage;
                 Debug.Log($"ATTACKER:{gameObject.name}  + TARGET HIT:{enemy.name}");
             }
         }
@@ -86,7 +86,7 @@ public class BossAttack : MonoBehaviour
             animator.SetBool("IsAttacking", true);
             if (enemy != null)
             {
-                enemy.GetComponent<Health>().HealthPoints -= attackDamage;
+                enemy.GetComponent<Health>().healthPoints -= attackDamage;
                 Debug.Log($"ATTACKER FAR:{gameObject.name}  + TARGET HIT FAR:{enemy.name}");
             }
         }
