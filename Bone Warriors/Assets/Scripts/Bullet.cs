@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
         if (collision.name == "Spartan Boss")
         {
             Debug.Log(collision.name + "WE HIT SOMETHING WITH THE BULLET!");
-            collision.GetComponent<Health>().healthPoints -= bulletDamage;
+            collision.GetComponent<BossHealth>().health -= bulletDamage;
             Destroy(gameObject);
         }
        

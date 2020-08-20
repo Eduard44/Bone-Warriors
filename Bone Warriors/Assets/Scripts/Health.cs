@@ -6,13 +6,6 @@ public class Health : MonoBehaviour
 {
     public float healthPoints;
 
-    public float maxHealth;
-
-    void Start()
-    {
-        healthPoints = maxHealth;
-    }
-
     void Update()
     {
         if(this.healthPoints <= 0)
@@ -21,8 +14,4 @@ public class Health : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
-    {
-        this.healthPoints -= damage;
-    }
 }

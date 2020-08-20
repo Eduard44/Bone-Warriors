@@ -67,7 +67,6 @@ public class BossAttack : MonoBehaviour
         //Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
         foreach (var enemy in enemies)
         {
-            
             if (enemy != null)
             {
                 enemy.GetComponent<Health>().healthPoints -= attackDamage;
