@@ -43,7 +43,7 @@ public class Attack : MonoBehaviour
         {
             if (enemy != null)
             {
-                enemy.GetComponent<Health>().healthPoints -= attackDamage;
+                enemy.GetComponent<BossHealth>().health -= attackDamage;
                 Debug.Log($"ATTACKER:{gameObject.name}  + TARGET HIT:{enemy.name}");
             }
         }
