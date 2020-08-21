@@ -19,7 +19,6 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log(collision.name + "WE HIT SOMETHING WITH THE BULLET!");
             collision.GetComponent<BossHealth>().health -= bulletDamage;
-            Destroy(gameObject);
         }
        
     }

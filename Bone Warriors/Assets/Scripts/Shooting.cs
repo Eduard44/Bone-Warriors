@@ -5,10 +5,6 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public GameObject bullet;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
