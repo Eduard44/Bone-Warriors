@@ -14,7 +14,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.name == "Spartan Boss")
         {
             Debug.Log(collision.name + "WE HIT SOMETHING WITH THE BULLET!");
