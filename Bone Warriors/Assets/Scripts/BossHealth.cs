@@ -14,14 +14,8 @@ public class BossHealth : MonoBehaviour
         health = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
-    }
-    void TakeDamage(float damage)
+
+    public void TakeDamage(float damage)
     {
         health -= damage;
 

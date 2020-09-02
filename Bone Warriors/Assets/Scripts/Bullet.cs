@@ -18,14 +18,9 @@ public class Bullet : MonoBehaviour
         if (collision.name == "Spartan Boss")
         {
             Debug.Log(collision.name + "WE HIT SOMETHING WITH THE BULLET!");
-            collision.GetComponent<BossHealth>().health -= bulletDamage;
+            collision.GetComponent<BossHealth>().TakeDamage(bulletDamage);
         }
        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
